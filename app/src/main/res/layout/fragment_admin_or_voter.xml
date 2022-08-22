@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdminOrVoter">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/regas"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:text="Who do you want to login as?"
+          android:textSize="24sp"
+          android:textStyle="bold|italic"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/buttonAsAdmin"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="32dp"
+          android:layout_marginEnd="16dp"
+          android:text="Administrator"
+          app:layout_constraintEnd_toStartOf="@+id/buttonAsVoter"
+          app:layout_constraintHorizontal_weight="1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/regas" />
+
+      <Button
+          android:id="@+id/buttonAsVoter"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:text="Voter"
+          app:layout_constraintBaseline_toBaselineOf="@+id/buttonAsAdmin"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintHorizontal_weight="1"
+          app:layout_constraintStart_toEndOf="@+id/buttonAsAdmin" />
+
+      <EditText
+          android:id="@+id/editTextAdminOrVoter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:textSize="16sp"
+          android:visibility="invisible"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.497"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewAdminOrVoter" />
+
+      <Button
+          android:id="@+id/buttonGo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:text="Go"
+          android:visibility="invisible"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextAdminOrVoter" />
+
+      <TextView
+          android:id="@+id/textViewAdminOrVoter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="64dp"
+          android:text="TextView"
+          android:textSize="20sp"
+          android:visibility="invisible"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/buttonAsAdmin" />
+
+      <Button
+          android:id="@+id/buttonAbout"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="64dp"
+          android:layout_marginEnd="64dp"
+          android:layout_marginBottom="32dp"
+          android:text="Know More"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginEnd="32dp"
+          android:layout_marginBottom="16dp"
+          android:text="To Know More about the role of the Administrator and the Voter, click the button below"
+          android:textAlignment="center"
+          android:textStyle="italic"
+          app:layout_constraintBottom_toTopOf="@+id/buttonAbout"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
